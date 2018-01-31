@@ -1,12 +1,10 @@
 platform: linux
-
-image_resource:
+#image_resource:
+#  type: docker-image
+#  source: {repository: ubuntu}
 
 inputs:
 - name: ng-concource-ci
 
-caches:
-- path: project-src/node_modules
-
 run:
-  path: ng-concource/prod-buils.sh
+  path: ./ng-concource-ci/prod-build.sh

@@ -2,5 +2,4 @@
 
 set -e -u -x
 
-cd project-src
-npm install
+echo "done"
