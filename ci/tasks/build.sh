@@ -2,6 +2,9 @@
 
 set -e -u -x
 
+
+
+
 npm -v
 
 ng -v
