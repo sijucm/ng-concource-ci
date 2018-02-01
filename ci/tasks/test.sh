@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "building....."
+
 set -e -u -x
 
 npm -v
