@@ -25,5 +25,5 @@ pwd
 
 ls -la
 
-echo "done"
+echo "done 2"
 
