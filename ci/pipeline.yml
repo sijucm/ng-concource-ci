@@ -24,7 +24,5 @@ jobs:
   - task: test
     file: ng-concource-ci/ci/tasks/build.yml
   - put: staging-app
-    params:
-      manifest: test/manifest.yml
-      path: test/root
+
 
