@@ -1,11 +1,11 @@
 resources:
-- name: ng-concource-ci
+- name: source
   type: git
   source:
     uri: https://github.com/do-mas/ng-concource-ci
     branch: master
 
-- name: staging-app
+- name: deployment
   type: cf
   source:
     api: https://api.run.pivotal.io
@@ -18,12 +18,13 @@ jobs:
 
 - name: test-app
   plan:
-  - get: ng-concource-ci
+  - get: source
     trigger: true
   - task: tests
     file: ng-concource-ci/ci/tasks/test.yml
-  - put: staging-app
+  - put: deployment
     params:
       manifest: ng-concource-ci/manifest.yml
+      file: dist/*
 
 
