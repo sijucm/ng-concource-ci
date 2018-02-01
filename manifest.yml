@@ -3,4 +3,8 @@ applications:
 - name: my-app
   memory: 64M
   instances: 1
+  path: root
   buildpack: staticfile_buildpack
+  space: development
+  random-route: true
+
