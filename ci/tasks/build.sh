@@ -34,7 +34,12 @@ cd ..
 mkdir put
 cd put
 mkdir test
-cp . ../../put/test
+
+cd ../..
+
+cd a94a8fe5/test
+
+cp -r . ../../put/test
 
 pwd
 
