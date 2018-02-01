@@ -32,34 +32,13 @@ ls -la
 
 cd ..
 pwd
-cd ..
-pwd
-mkdir put
-cd put
-mkdir test
-pwd
-
-cd ..
-pwd
-
-cd a94a8fe5
-
-ls -la
-
 cd test
-
 ls -la
-
 pwd
-
 cd ..
-
-cd ng-concource-ci
-
+cd ng-concource-ci/root
 ls -la
-
-cp -r . ../../put/test
-
+cd ..
 cp -r . ../test
 
 pwd
