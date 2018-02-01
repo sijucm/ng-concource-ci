@@ -6,8 +6,6 @@ npm -v
 
 ng -v
 
-cf -version
-
 cd ng-concource-ci
 
 pwd
