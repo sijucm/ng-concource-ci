@@ -6,7 +6,7 @@ image_resource:
      repository: teracy/angular-cli
 
 inputs:
-- name: ng-concource-ci
+- name: source
 
 run:
   path: ./ng-concource-ci/ci/build.sh
