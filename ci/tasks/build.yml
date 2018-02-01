@@ -12,6 +12,9 @@ outputs:
 - name: artifacts
   path: dist
 
+caches:
+- path: ng-concource-ci/node_modules
+
 run:
   path: ./ng-concource-ci/ci/tasks/build.sh
 
