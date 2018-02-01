@@ -6,6 +6,16 @@ npm -v
 
 ng -v
 
+ls -la
+
+cd ..
+
+ls -la
+
+cd -
+
+ls -la
+
 cd ng-concource-ci
 
 pwd
