@@ -3,5 +3,5 @@ applications:
 - name: my-app
   memory: 64M
   instances: 1
-  path: dist
+  path: ng-concource-ci/dist
   buildpack: staticfile_buildpack
