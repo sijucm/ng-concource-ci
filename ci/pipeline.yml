@@ -26,5 +26,5 @@ jobs:
   - put: staging-app
     params:
       manifest: ng-concource-ci/manifest.yml
-      path: ng-concource-ci/root
+      path: test-app/root
 
