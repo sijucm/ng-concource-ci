@@ -10,7 +10,7 @@ inputs:
 
 outputs:
 - name: artifacts
-  path: ng-concource-ci
+  path: ng-concource-ci/root
 
 caches:
 - path: ng-concource-ci/node_modules
