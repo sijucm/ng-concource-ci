@@ -39,7 +39,12 @@ cd ..
 cd ng-concource-ci/root
 ls -la
 cd ..
+
 cp -r . ../test
+
+cd ..
+cd test
+ls -la
 
 pwd
 

@@ -27,4 +27,5 @@ jobs:
     params:
       manifest: ng-concource-ci/manifest.yml
       files: ng-concource-ci
+      path: test/root
 
