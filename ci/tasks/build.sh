@@ -29,13 +29,17 @@ ng build
 cp Staticfile root
 
 cd ..
+pwd
 cd ..
-
+pwd
 mkdir put
 cd put
 mkdir test
+pwd
 
-cd ../..
+cd ..
+pwd
+cd ..
 
 cd a94a8fe5
 

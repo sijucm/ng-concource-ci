@@ -1,0 +1,24 @@
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+     repository: teracy/angular-cli
+
+inputs:
+- name: ng-concource-ci
+
+outputs:
+- name: test
+  path: ../../put
+
+caches:
+- path: ng-concource-ci/node_modules
+
+run:
+  path: ./ng-concource-ci/ci/tasks/build.sh
+
+
+
+
+
