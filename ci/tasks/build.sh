@@ -19,6 +19,8 @@ npm install
 
 ng build
 
+cp Staticfile root
+
 pwd
 
 ls -la
