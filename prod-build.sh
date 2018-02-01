@@ -16,8 +16,6 @@ npm install
 
 ng build
 
-
-
 pwd
 
 ls -la
