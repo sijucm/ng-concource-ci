@@ -37,7 +37,9 @@ mkdir test
 
 cd ../..
 
-cd a94a8fe5/test
+cd a94a8fe5/ng-concource-ci
+
+ls -la
 
 cp -r . ../../put/test
 
