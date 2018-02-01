@@ -21,7 +21,7 @@ jobs:
   - get: source
     trigger: true
   - task: tests
-    file: ng-concource-ci/ci/tasks/test.yml
+    file: ng-concource-ci/ci/tasks/build.yml
   - put: deployment
     params:
       manifest: ng-concource-ci/manifest.yml
