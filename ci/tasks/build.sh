@@ -23,10 +23,5 @@ pwd
 
 ls -la
 
-cd /tmp/build/put
-
-ls -la
-
-
 echo "done 4"
 
