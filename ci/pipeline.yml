@@ -21,10 +21,10 @@ jobs:
   plan:
   - get: ng-concource-ci
     trigger: true
-  - task: tests
+  - task: test
     file: ng-concource-ci/ci/tasks/build.yml
   - put: staging-app
     params:
-      manifest: test-app/manifest.yml
-      path: test-app/root
+      manifest: test/manifest.yml
+      path: test/root
 
