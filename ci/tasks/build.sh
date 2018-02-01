@@ -37,7 +37,11 @@ mkdir test
 
 cd ../..
 
-cd a94a8fe5/ng-concource-ci
+cd a94a8fe5
+
+ls -la
+
+cd ng-concource-ci
 
 ls -la
 
