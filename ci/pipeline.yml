@@ -27,4 +27,3 @@ jobs:
     params:
       manifest: build-out/manifest.yml
       path: build-out/root
-      files: build-out
