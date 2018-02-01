@@ -9,7 +9,7 @@ inputs:
 - name: ng-concource-ci
 
 run:
-  path: ./ng-concource-ci/tasks/ci/build.sh
+  path: ./ng-concource-ci/ci/tasks/build.sh
 
 
 
