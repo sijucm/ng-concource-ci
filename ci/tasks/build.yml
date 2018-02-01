@@ -10,7 +10,6 @@ inputs:
 
 outputs:
 - name: test
-  path: test
 
 caches:
 - path: ng-concource-ci/node_modules
