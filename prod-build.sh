@@ -20,8 +20,6 @@ ng build
 
 pwd
 
-cd put
-
 ls -la
 
 echo "done"
