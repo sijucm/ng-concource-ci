@@ -8,6 +8,10 @@ image_resource:
 inputs:
 - name: ng-concource-ci
 
+outputs:
+- name: artifacts
+  path: dist
+
 run:
   path: ./ng-concource-ci/ci/tasks/build.sh
 
