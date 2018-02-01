@@ -27,16 +27,14 @@ npm install
 ng build
 
 cp Staticfile root
-
 ls -la
 
 cd ..
-
 ls -la
 
-pwd
 cd test
 ls -la
+
 pwd
 cd ..
 cd ng-concource-ci/root
