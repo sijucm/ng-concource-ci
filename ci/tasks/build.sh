@@ -52,6 +52,14 @@ cp -r . ../../put/test
 
 pwd
 
+cd /tmp/build/
+pwd
+ls -la
+
+cd put
+ls -la
+
+cd test
 
 ls -la
 
