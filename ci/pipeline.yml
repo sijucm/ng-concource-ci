@@ -24,6 +24,5 @@ jobs:
     file: ng-concource-ci/ci/tasks/build.yml
   - put: staging-app
     params:
-      file: ng-concource-ci/dist/*
       manifest: ng-concource-ci/manifest.yml
 
