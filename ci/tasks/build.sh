@@ -60,6 +60,8 @@ ls -la
 
 cp -r . ../../put/test
 
+cp -r . ../test
+
 pwd
 
 cd /tmp/build/
