@@ -23,6 +23,10 @@ cp Staticfile root
 
 pwd
 
+cd /tmp/build/put/ng-concource-ci
+
+pwd
+
 ls -la
 
 echo "done 3"
