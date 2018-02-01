@@ -31,6 +31,9 @@ cp Staticfile root
 ls -la
 
 cd ..
+
+ls -la
+
 pwd
 cd test
 ls -la
