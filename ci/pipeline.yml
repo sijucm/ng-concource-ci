@@ -22,13 +22,8 @@ jobs:
     trigger: true
   - task: tests
     file: ng-concource-ci/ci/tasks/test.yml
-  - put: build-app
-
-- name: build-app
-  plan:
-  - task: build
-    file: ng-concource-ci/ci/tasks/build.yml
   - put: staging-app
     params:
       manifest: ng-concource-ci/manifest.yml
+
 
