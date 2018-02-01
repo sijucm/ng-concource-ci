@@ -32,7 +32,7 @@ ls -la
 cd ..
 ls -la
 
-cd test
+cd build-out
 ls -la
 
 pwd
@@ -41,11 +41,11 @@ cd ng-concource-ci/root
 ls -la
 cd ..
 
-cp -r . ../test
+cp -r . ../build-out
 
 cd ..
 
-cd test
+cd build-out
 ls -la
 
 pwd
