@@ -43,18 +43,12 @@ cp -r . ../test
 
 pwd
 
-cd /tmp/build/
-pwd
-ls -la
-
-cd put
-ls -la
-
-cd test
+cd ..
 
 pwd
-
 ls -la
+
+
 
 echo "done 4"
 
