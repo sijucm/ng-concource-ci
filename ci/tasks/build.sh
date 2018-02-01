@@ -28,6 +28,8 @@ ng build
 
 cp Staticfile root
 
+ls -la
+
 cd ..
 pwd
 cd ..
@@ -43,6 +45,14 @@ pwd
 cd a94a8fe5
 
 ls -la
+
+cd test
+
+ls -la
+
+pwd
+
+cd ..
 
 cd ng-concource-ci
 
