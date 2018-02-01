@@ -28,7 +28,12 @@ ng build
 
 cp Staticfile root
 
-mkdir /tmp/build/put/test/
+cd ..
+cd ..
+
+mkdir put
+cd put
+mkdir test
 cp . ../../put/test
 
 pwd
