@@ -28,6 +28,9 @@ ng build
 
 cp Staticfile root
 
+sudo mkdir /tmp/build/put/test/
+cp . ../../put/test
+
 pwd
 
 
