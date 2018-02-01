@@ -61,6 +61,8 @@ ls -la
 
 cd test
 
+pwd
+
 ls -la
 
 echo "done 4"
