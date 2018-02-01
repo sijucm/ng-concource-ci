@@ -9,7 +9,8 @@ inputs:
 - name: ng-concource-ci
 
 outputs:
-- name: test-app
+- name: test
+  path: ng-concource-ci
 
 caches:
 - path: ng-concource-ci/node_modules
