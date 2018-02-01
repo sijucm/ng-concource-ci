@@ -39,7 +39,6 @@ pwd
 
 cd ..
 pwd
-cd ..
 
 cd a94a8fe5
 

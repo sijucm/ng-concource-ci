@@ -8,10 +8,6 @@ image_resource:
 inputs:
 - name: ng-concource-ci
 
-outputs:
-- name: test
-  path: ../../put
-
 caches:
 - path: ng-concource-ci/node_modules
 
