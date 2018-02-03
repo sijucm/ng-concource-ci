@@ -1,0 +1,23 @@
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+     repository: lioman/ng-chrome
+
+inputs:
+- name: ng-concource-ci
+
+outputs:
+- name: build-out
+
+caches:
+- path: ng-concource-ci/node_modules
+
+run:
+  path: ./ng-concource-ci/ci/tasks/build.sh
+
+
+
+
+

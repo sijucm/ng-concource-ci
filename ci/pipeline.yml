@@ -3,7 +3,7 @@ resources:
   type: git
   source:
     uri: https://github.com/do-mas/ng-concource-ci
-    branch: master
+    branch: tests
 
 - name: staging-app
   type: cf
@@ -22,7 +22,7 @@ jobs:
   - get: ng-concource-ci
     trigger: true
   - task: test
-    file: ng-concource-ci/ci/tasks/build.yml
+    file: ng-concource-ci/ci/tasks/test.yml
   - put: staging-app
     params:
       manifest: build-out/manifest.yml
