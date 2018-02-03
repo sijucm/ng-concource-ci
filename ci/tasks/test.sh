@@ -2,19 +2,10 @@
 
 set -e -u -x
 
-yarn -v
-
-ng -v
-
 cd ng-concource-ci
 
-yarn install
+npm install
 
-yarn test:nosandbox
+npm run test:nosandbox
 
-#sudo ng build
-
-#sudo cp Staticfile root
-
-#sudo cp -r . ../build-out
 

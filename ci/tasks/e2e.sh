@@ -4,13 +4,8 @@ set -e -u -x
 
 cd ng-concource-ci
 
-yarn install
+npm install
 
-yarn e2e
+npm e2e
 
-#sudo ng build
-
-#sudo cp Staticfile root
-
-#sudo cp -r . ../build-out
 

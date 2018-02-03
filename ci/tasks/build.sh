@@ -2,9 +2,6 @@
 
 set -e -u -x
 
-npm -v
-ng -v
-
 cd ng-concource-ci
 
 npm install
