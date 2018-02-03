@@ -6,6 +6,6 @@ cd ng-concource-ci
 
 npm install
 
-npm e2e
+npm run e2e
 
 
