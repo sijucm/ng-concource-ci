@@ -8,6 +8,9 @@ ng -v
 cd ng-concource-ci
 
 npm install
+
+npm run test
+
 ng build
 
 cp Staticfile root
