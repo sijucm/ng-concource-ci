@@ -2,12 +2,12 @@
 
 set -e -u -x
 
-npm -v
+yarn -v
 ng -v
 
 cd ng-concource-ci
 
-npm install
+yarn install
 
 npm run test
 
