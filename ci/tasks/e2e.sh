@@ -4,9 +4,9 @@ set -e -u -x
 
 cd ng-concource-ci
 
-sudo yarn install
+yarn install
 
-sudo yarn e2e
+yarn e2e
 
 #sudo ng build
 
