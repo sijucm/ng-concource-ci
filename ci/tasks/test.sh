@@ -5,6 +5,7 @@ set -e -u -x
 yarn -v
 ng -v
 
+
 cd ng-concource-ci
 
 yarn install
