@@ -7,6 +7,7 @@
     "start": "ng serve",
     "build": "ng build --prod",
     "test": "ng test --watch=false",
+    "test:nosandbox": "ng test --browsers Chrome_no_sandbox -w false",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },

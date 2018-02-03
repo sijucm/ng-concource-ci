@@ -3,7 +3,7 @@ platform: linux
 image_resource:
   type: docker-image
   source:
-     repository: teracy/angular-cli
+     repository: trion/ng-cli-e2e
 
 inputs:
 - name: ng-concource-ci
@@ -12,7 +12,7 @@ caches:
 - path: ng-concource-ci/node_modules
 
 run:
-  path: ./ng-concource-ci/ci/tasks/test.sh
+  path: ./ng-concource-ci/ci/tasks/e2e.sh
 
 
 

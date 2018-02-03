@@ -10,20 +10,37 @@ resources:
   source:
     api: https://api.run.pivotal.io
     username: domas.juodele@gmail.com
-    password: Pivotal$1
+    password: {password}
     organization: doju-pro
     space: development
     random-route: true
 
 jobs:
 
-- name: test-app
+- name: unit-tests
   plan:
   - get: ng-concource-ci
     trigger: true
   - task: test
     file: ng-concource-ci/ci/tasks/test.yml
+
+- name: e2e-tests
+  plan:
+  - get: ng-concource-ci
+    trigger: true
+  - task: e2e
+    file: ng-concource-ci/ci/tasks/e2e.yml
+
+- name: build
+  plan:
+  - aggregate:
+    - get: ng-concource-ci
+      trigger: true
+      passed: [e2e-tests, unit-tests]
+  - task: build
+    file: ng-concource-ci/ci/tasks/build.yml
   - put: staging-app
     params:
       manifest: build-out/manifest.yml
       path: build-out/root
+

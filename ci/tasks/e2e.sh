@@ -2,15 +2,11 @@
 
 set -e -u -x
 
-yarn -v
-
-ng -v
-
 cd ng-concource-ci
 
-yarn install
+sudo yarn install
 
-yarn test:nosandbox
+sudo yarn e2e
 
 #sudo ng build
 
