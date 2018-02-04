@@ -9,5 +9,7 @@ cd ng-concource-ci
 #ng build
 
 #cp Staticfile root
-cp -r . ../build-out
+#cp -r . ../build-out
+
+cp -r ./manifest.yml ../build-out/manifest-5.yml
 
