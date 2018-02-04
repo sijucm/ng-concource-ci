@@ -7,6 +7,7 @@ image_resource:
 
 inputs:
 - name: storage
+- name: ng-concource-ci
 
 outputs:
 - name: build-out
