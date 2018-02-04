@@ -17,6 +17,8 @@
 *.launch
 .settings/
 *.sublime-workspace
+ci/pipeline.yml
+ci/pipeline1.yml
 
 # IDE - VSCode
 .vscode/*

@@ -26,20 +26,6 @@ resources:
 
 jobs:
 
-- name: unit-tests
-  plan:
-  - get: ng-concource-ci
-    trigger: true
-  - task: test
-    file: ng-concource-ci/ci/tasks/test.yml
-
-- name: e2e-tests
-  plan:
-  - get: ng-concource-ci
-    trigger: true
-  - task: e2e
-    file: ng-concource-ci/ci/tasks/e2e.yml
-
 - name: release
   plan:
   - aggregate:
@@ -58,7 +44,6 @@ jobs:
   - aggregate:
     - get: ng-concource-ci
       trigger: true
-      passed: [e2e-tests, unit-tests]
   - task: build
     file: ng-concource-ci/ci/tasks/build.yml
   - put: storage
