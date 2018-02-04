@@ -4,10 +4,10 @@ set -e -u -x
 
 cd ng-concource-ci
 
-npm install
+#npm install
 
-ng build
+#ng build
 
-cp Staticfile root
+#cp Staticfile root
 cp -r . ../build-out
 

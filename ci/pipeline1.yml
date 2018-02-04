@@ -4,6 +4,7 @@ resources:
   type: s3
   source:
     bucket: do-ju-concuorse
+    region_name: us-east-2
     regexp: web-app/ui
     access_key_id: AKIAJPBH4JHLGAABQDPA
     secret_access_key: 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
