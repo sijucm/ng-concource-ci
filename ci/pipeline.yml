@@ -1,9 +1,18 @@
 resources:
+
+- name: storage
+  type: s3
+  source:
+    bucket: do-ju-concourse
+    regexp: web-app/ui
+    access_key_id: AKIAJPBH4JHLGAABQDPA
+    secret_access_key: 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
+
 - name: ng-concource-ci
   type: git
   source:
     uri: https://github.com/do-mas/ng-concource-ci
-    branch: tests
+    branch: s3
 
 - name: staging-app
   type: cf
@@ -31,6 +40,19 @@ jobs:
   - task: e2e
     file: ng-concource-ci/ci/tasks/e2e.yml
 
+- name: release
+  plan:
+  - aggregate:
+    - get: storage
+      trigger: true
+      passed: [build]
+  - task: build
+    file: ng-concource-ci/ci/tasks/build.yml
+  - put: staging-app
+    params:
+      manifest: build-out/manifest.yml
+      path: build-out/root
+
 - name: build
   plan:
   - aggregate:
@@ -39,7 +61,7 @@ jobs:
       passed: [e2e-tests, unit-tests]
   - task: build
     file: ng-concource-ci/ci/tasks/build.yml
-  - put: staging-app
+  - put: storage
     params:
       manifest: build-out/manifest.yml
       path: build-out/root

@@ -4,8 +4,8 @@ set -e -u -x
 
 cd ng-concource-ci
 
-npm install
+#npm install
 
-npm run test:nosandbox
+#npm run test:nosandbox
 
 

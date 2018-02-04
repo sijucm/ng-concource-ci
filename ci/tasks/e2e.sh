@@ -3,9 +3,9 @@
 cd ng-concource-ci
 
 echo "Resolving dependencies..."
-npm install
+#npm install
 
 echo "Initializing e2e tests..."
-npm run e2e
+#npm run e2e
 
 
