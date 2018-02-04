@@ -11,6 +11,7 @@ tar -xvzf storage/artifact-1.tar.gz -C build-out/
 
 cd build-out
 
+cd artifact
 
 ls -la
 

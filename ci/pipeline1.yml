@@ -40,8 +40,8 @@ jobs:
     file: ng-concource-ci/ci/tasks/release.yml
   - put: staging-app
     params:
-      manifest: build-out/manifest.yml
-      path: build-out/root
+      manifest: build-out/artifact/manifest.yml
+      path: build-out/artifact/root
 
 - name: build
   plan:
