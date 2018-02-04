@@ -33,6 +33,9 @@ jobs:
     - get: storage
       trigger: true
       passed: [build]
+    - get: ng-concource-ci
+      trigger: true
+      passed: [build]
   - task: release
     file: ng-concource-ci/ci/tasks/release.yml
   - put: staging-app
