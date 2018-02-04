@@ -6,6 +6,7 @@ cd ng-concource-ci
 
 npm install
 
+
 npm run test:nosandbox
 
 
