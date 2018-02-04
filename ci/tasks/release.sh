@@ -13,6 +13,7 @@ cd storage
 
 #ng build
 
+
 #cp Staticfile root
 #cp -r . ../build-out
 
