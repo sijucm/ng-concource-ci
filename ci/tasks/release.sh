@@ -7,16 +7,9 @@ pwd
 
 ls -la
 
-cd storage
+tar -xvzf storage/artifact-1.tar.gz build-out/
 
-#npm install
+cd build-out
 
-#ng build
-
-
-#cp Staticfile root
-#cp -r . ../build-out
-
-
-cp -r ./manifest.yml ../build-out/manifest-5.yml
+ls -la
 
