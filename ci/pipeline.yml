@@ -10,7 +10,7 @@ resources:
   source:
     api: https://api.sys01.cf.nl.eu.abnamro.com
     username: siju.mathew
-    password: Password2018
+    password: PXYZ
     organization: rpb-products-org
     space: 04-development
     random-route: true
